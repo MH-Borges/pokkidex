@@ -1,0 +1,310 @@
+.pokedex {
+	display: flex;
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	.PokemonList{
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction:flex-start;
+		a{
+			text-decoration: none;
+			transition: 0.4s ease-in-out;
+			li{
+				background-color: rgba(255, 255, 255, 0.685);
+				border-radius: 25px;
+				padding: 30px 20px;
+				margin: 20px 20px;
+				list-style: none;
+				box-shadow: rgba(34, 34, 34, 0.527) 1px 3px 15px;
+				text-align: left;
+				img{
+					width: 210px;
+					background-color: rgba(255, 255, 255, 0.850);
+					border-radius: 50%;
+				}
+				p{
+					font-family: 'Exo', sans-serif;
+					font-weight: bold;
+					color: gray;
+				}
+				h2{
+					color: black;
+					font-size: 25px;
+					margin-top: 15px;
+					font-family: 'Exo', sans-serif;
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+			}
+		}
+		a:hover{
+			transform: translateY(-8px);
+		}
+		
+	}
+}
+.pokedexBlock{
+	background-image: linear-gradient(329deg, #08AEEA 0%, #05ff82 54%);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.bigBlock{
+		background-color: #8B051C;
+		width: 35vw;
+		height: 45vw;
+		border-radius: 20px 20px 0 20px;
+		border: 1px solid black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		.header{
+			background-color: #DC0A2D;
+			border:1px solid black;
+			width: 100%;
+			height: 7vw;
+			border-radius: 20px 20px 0 0;
+			border-bottom-left-radius: 0;
+			position: relative;
+			.bigCircle{
+				width: 5vw;
+				height: 5vw;
+				background-color: #DCDCDC;
+				border-radius: 50%;
+				border: 1px solid rgb(29, 29, 29);
+				position: relative;
+				margin: 0.8vw 0 0 1.5vw;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.bigCircle::before{
+				content: '';
+				width: 4vw;
+				height: 4vw;
+				background: linear-gradient(107.56deg, #A0DCFD 0%, #19699E 100%);
+				border-radius: 50%;
+				border: 1px solid #0E5889;
+				position: absolute;
+			}
+			.bigCircle::after{
+				content: '';
+				background-color: #ff2424;
+				position: absolute;
+				width: 1vw;
+				height: 1vw;
+				border-radius: 50%;
+				border: 1px solid rgb(29, 29, 29);
+				top: 0.5vw;
+				left: 6.5vw;
+				
+			}
+		}
+		.header::before{
+			content: '';
+			background-color: #FFF476;
+			position: absolute;
+			width: 1vw;
+			height: 1vw;
+			border-radius: 50%;
+			border: 1px solid rgb(29, 29, 29);
+			top: 1.35vw;
+			left: 10.1vw;
+		}
+		.header::after{
+			content: '';
+			background-color: #5DAE6A;
+			position: absolute;
+			width: 1vw;
+			height: 1vw;
+			border-radius: 50%;
+			border: 1px solid rgb(29, 29, 29);
+			top: 1.35vw;
+			left: 12.2vw;
+		}
+		.visorPoke{
+			width: 26vw;
+			height: 21vw;
+			display: flex;
+			justify-content: center;
+			background-color: #DEDEDE;
+			margin-top: 3.5vw;
+			z-index: 3;
+			border-radius: 20px 20px 20px 80px;
+			position: relative;
+			border: 1px solid rgb(85, 85, 85);
+		}
+		.visorInterno{
+			width: 80%;
+			height: 62%;
+			background-color: #2595c9;
+			margin-top: 2.5vw;
+			border-radius: 1vw;
+			border: 1px solid #0e6a94;
+
+		}
+	}
+	.bigBlock::before{
+		position: absolute;
+		content: '';
+		width: 97%;
+		height: 36.8vw;
+		margin-top: 7.5vw;
+		background-color: #DC0A2D;
+		border-radius: 15px;
+		border: solid 1px black;
+	}
+	.smallBlock{
+		background-color: #8B051C;
+		width: 35vw;
+		height: 38vw;
+		margin-top: 7vw;
+		border-radius: 0 0 20px 0;
+		border: 1px solid black;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;	
+	}
+	.smallBlock::before{
+		content: '';
+		width: 97%;
+		height: 97%;
+		background-color: #DC0A2D;
+		border-radius: 15px;
+		border: solid 1px black;
+	}
+	
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water, .ice {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}

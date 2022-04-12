@@ -1,0 +1,23 @@
+.btn {
+  background-color: white;
+  padding: 15px 20px;
+  color: red;
+  border-radius: 10px 20px;
+  font-weight: 900;
+  text-decoration: none;
+  font-family: 'Exo', sans-serif;
+  -webkit-box-shadow: 0 2px 5px #202020;
+          box-shadow: 0 2px 5px #202020;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border: 0.5px solid black;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 5px 10px #202020;
+          box-shadow: 0 5px 10px #202020;
+  border-radius: 20px 10px;
+}
+/*# sourceMappingURL=Button.module.css.map */
