@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar/Navbar';
-import styles from './Pokedex.module.scss'
+import Button from '../components/Button/Button';
+]import styles from './Pokedex.module.scss'
 
 function Pokedex() {
 
@@ -61,7 +61,12 @@ function Pokedex() {
                             <div className={styles.visorInterno}></div>
                         </div>
                         <div className={styles.controls}>
-                            
+                            <div className={styles.buttonRandom}></div>
+                            <div className={styles.visorUnder}></div>
+                            <div className={styles.buttonsNextBefore}>
+                                <Button to="/pokedex" className={styles.before}/>
+                                <Button to="/pokedex" className={styles.next}/>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.smallBlock}>

@@ -140,6 +140,28 @@
 			position: relative;
 			border: 1px solid rgb(85, 85, 85);
 		}
+		.visorPoke::before{
+			content: '';
+			background-color: #ff2424;
+			width: 1vw;
+			height: 1vw;
+			position: absolute;
+			top: 0.7vw;
+			margin-left: -2vw;
+			border-radius: 50%;
+			border: 1px solid rgb(19, 19, 19);
+		}
+		.visorPoke::after{
+			content: '';
+			background-color: #ff2424;
+			width: 1vw;
+			height: 1vw;
+			position: absolute;
+			top: 0.7vw;
+			margin-left: 2vw;
+			border-radius: 50%;
+			border: 1px solid rgb(19, 19, 19);
+		}
 		.visorInterno{
 			width: 80%;
 			height: 62%;
@@ -147,7 +169,18 @@
 			margin-top: 2.5vw;
 			border-radius: 1vw;
 			border: 1px solid #0e6a94;
-
+			position: relative;
+		}
+		.visorInterno::before{
+			content: '';
+			background-color: #ff2424;
+			width: 1.8vw;
+			height: 1.8vw;
+			position: absolute;
+			bottom: -3vw;
+			left: 0.5vw;
+			border-radius: 50%;
+			border: 1px solid rgb(19, 19, 19);
 		}
 	}
 	.bigBlock::before{
